@@ -1,1 +1,2 @@
 # Proyecto-Final-Fundamentos-web-441A
+este proyecto me permitio mejorar mis capacidades de resolución de problemas y mejorar en muchos campos de programación, y fue bastante entretenido profesor, espero que el resultado haya sido lo más sercano a lo que estaba esperando.
