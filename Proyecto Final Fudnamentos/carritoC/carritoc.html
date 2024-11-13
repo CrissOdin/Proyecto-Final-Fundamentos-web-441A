@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pixel Vault - Finalizar Compra</title>
+  <link rel="stylesheet" href="./caritoc.css" />
+</head>
+<body>
+  <header>
+    <h1>Pixel Vault - Finalizar Compra</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Carrito de Compras</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Categoría</th>
+            <th>Precio Unitario</th>
+            <th>Cantidad</th>
+            <th>Total</th>
+            <th>Acción</th>
+          </tr>
+        </thead>
+        <tbody id="cart-table-body">
+        </tbody>
+      </table>
+
+      <label>
+        <input type="checkbox" id="apply-shipping" />
+        Aplicar costo de envío (15,000)
+      </label>
+      
+      <p id="total-cost">Total: $0</p>
+
+      <nav>
+        <button type="button" id="cancel-purchase">Cancelar Compra</button>
+        <button type="button" id="continue-shopping">Seguir Comprando</button>
+      </nav>
+    </section>  
+    <aside>
+      <h3>Información de Pago</h3>
+      <form id="payment-form" action="#" method="post">
+        <label for="celular">Número de Celular</label>
+        <input type="tel" id="celular" name="celular" required />
+
+        <label for="tarjeta">Número de Tarjeta</label>
+        <input type="text" id="card-number" name="numero_tarjeta" maxlength="16" required />
+
+        <label for="expiracion">Fecha de Expiración (MM/AA)</label>
+        <input type="text" id="expiry-date" name="expiracion" placeholder="MM/AA" required />
+
+        <label for="cvv">Código CVV</label>
+        <input type="password" id="cvv" name="cvv" maxlength="3" required />
+        <button type="button" id="toggle-cvv-visibility">Mostrar CVV</button>
+
+        <label for="titular">Nombre del Titular de la Tarjeta</label>
+        <input type="text" id="titular" name="titular" required />
+
+        <label for="country">País de Emisión</label>
+        <select id="country" name="country" required>
+          <option value="CO">Colombia</option>
+          <option value="US">Estados Unidos</option>
+          <option value="MX">México</option>
+          <option value="ES">España</option>
+          <option value="BR">Brasil</option>
+          <option value="AR">Argentina</option>
+          <option value="CL">Chile</option>
+          <option value="PE">Perú</option>
+          <option value="VE">Venezuela</option>
+          <option value="FR">Francia</option>
+        </select>
+
+        <label for="card-type">Tipo de Tarjeta</label>
+        <select id="card-type" name="card_type" required>
+          <option value="mastercard">Mastercard</option>
+          <option value="visa">Visa</option>
+          <option value="prepaid">Prepagada</option>
+        </select>
+
+        <button type="button" id="clear-fields">Limpiar Campos</button>
+        <button type="submit" id="confirm-purchase">Confirmar Compra</button>
+      </form>
+    </aside>
+  </main>
+
+  <script src="../carritoC/carritoc.js"></script>
+</body>
+</html>

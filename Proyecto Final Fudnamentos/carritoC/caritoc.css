@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f9;
+    background-image: url('../images/fondocarritoc.jpeg');
+    background-size: 1300px 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header {
+    background-color: #a45f2d;
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  section {
+    width: 45%;
+  }
+  
+  section table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+  }
+  
+  section th,
+  section td {
+    padding: 12px;
+    background-color: #d8d8d8;
+    color: #333;
+    text-align: center;
+    border: 1px solid #a45f2d;
+  }
+  
+  section label {
+    display: block;
+    margin: 20px 0 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  section nav {
+    display: flex;
+    gap: 10px;
+  }
+  
+  section nav button {
+    background-color: #a45f2d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  section nav button:hover {
+    background-color: #8c4d25;
+  }
+  
+
+  aside {
+    width: 45%;
+  }
+  
+  aside form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  aside label {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  aside input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  aside input:focus {
+    border-color: #a45f2d;
+  }
+  
+  aside button[type="submit"] {
+    margin-top: 20px;
+    background-color: #a45f2d;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  aside button[type="submit"]:hover {
+    background-color: #8c4d25;
+  }
+  
+  
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    section,
+    aside {
+      width: 100%;
+    }
+  }
