@@ -122,6 +122,15 @@ const budget = requerimientosCompra.presupuesto;
     return total;
   }
 
+   document.getElementById("cancel-purchase").addEventListener("click", () => {
+    localStorage.removeItem("cartItems");
+    window.location.href = "/index.html";
+  });
+
+  document.getElementById("continue-shopping").addEventListener("click", () => {
+    window.location.href = "/listaP/listap.html";
+  });
 
   loadCart();
+
 });
